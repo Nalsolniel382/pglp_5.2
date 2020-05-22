@@ -7,7 +7,7 @@ import java.sql.DriverManager;
 
 public abstract class BDD {
 
-	  public static void createDataBase() throws SQLException {
+	  public static void creeBDD() throws SQLException {
 	      
 		 DriverManager.getConnection("jdbc:derby:BDD;create=true");
 	  }
