@@ -8,10 +8,8 @@ import java.sql.DriverManager;
 public abstract class BDD {
 
 	  public static void createDataBase() throws SQLException {
-	        DriverManager.getConnection(
-	                "jdbc:derby:compositePattern;create=true");
-	    }
-	
-	 
+	      
+		 DriverManager.getConnection("jdbc:derby:BDD;create=true");
+	  }
 	
 }
